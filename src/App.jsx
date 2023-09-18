@@ -40,15 +40,17 @@ function Articles({ onArticleClick }) {
   ];
 
   return (
-    <div className="grid md:grid-cols-2 gap-4 p-4">
-      {sampleArticles.map(article => (
-        <Article 
-          key={article.id} 
-          title={article.title} 
-          content={article.content} 
-          onClick={() => onArticleClick(article)} 
-        />
-      ))}
+    <div className="flex justify-center p-4">
+      <div className="grid md:grid-cols-1 gap-4 max-w-screen-lg w-full">
+        {sampleArticles.map(article => (
+          <Article 
+            key={article.id} 
+            title={article.title} 
+            content={article.content} 
+            onClick={() => onArticleClick(article)} 
+          />
+        ))}
+      </div>
     </div>
   );
 }
