@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
   const [selectedArticle, setSelectedArticle] = useState(null);
@@ -77,6 +79,13 @@ function FullPageArticle({ title, content, onClose }) {
 function Footer() {
   return (
     <div className="text-center py-4">
+      <a href="https://www.linkedin.com/in/miliansolberg" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faLinkedin} />
+      </a>
+      <span className="mx-2"></span>
+      <a href="https://github.com/miliansolberg" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faGithub} />
+      </a>
       <p className="text-gray-500">© 2023 My Technical Blog. All rights reserved.</p>
     </div>
   );
