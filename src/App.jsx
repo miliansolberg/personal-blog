@@ -86,7 +86,7 @@ function Footer() {
       <a href="https://github.com/miliansolberg" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faGithub} />
       </a>
-      <p className="text-gray-500">© 2023 My Technical Blog. All rights reserved.</p>
+      <p className="text-gray-500">© 2023 Milian Solberg. All rights reserved.</p>
     </div>
   );
 }
